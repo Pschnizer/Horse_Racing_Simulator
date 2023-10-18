@@ -6,6 +6,7 @@
   - The race will occur and the final position of each horse will be shown
   - Hopefully would have a cool interface
       - Maybe include an interface that tracks bets on horses
+  - Could somehow incorporate data from previous horse races to make the simulations more realistic
 
 2. Meal Recommender
   - Based on user preferences, recommends a meal for them to eat
