@@ -1,4 +1,6 @@
 ### Data
+All current data was found on [Kaggle](https://www.kaggle.com/datasets/gdaley/hkracing/data)
+
 There are two spreadsheets right now:
 
 **races.csv:**
