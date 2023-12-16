@@ -109,7 +109,7 @@ Parameters: horses='random', track='random', num_horses='random', sims=50
 The most important attributes of the race object are the horses in the race and the track. Upon initialization, a user-specified number of Monte Carlo simulations are conducted to determine odds for the horses. After initialization, a user can simulate an individual race. The most important functions here are **simulate_race** and **get_race_odds**.
 
 - **simulate_race**
-    - # Time steps = distance in meters
+    - Time steps = distance in meters
     - At each time step, call the move method for all horses in the race that have not yet finished
         - This moves the horses' positions by a certain number of meters
     - Once a horse's position surpasses the race distance, mark the horse as finished and print out it's placing and finish time
