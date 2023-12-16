@@ -1,5 +1,13 @@
 # Horse Racing Simulator
-
+**To Run the Website:** 
+- Download Run folder and pipfiles 
+- Install packages from pipfile
+- Enter "streamlit run run.py" into command line
+- If the database needs to be rebuilt:
+    - Enter Python and import HorseDB
+    - Create an instance "D"
+    - Run D.rebuild_db()
+    
 ### Create Virtual Horses, Get Odds, and Simulate Races!
 
 **There are three types of races:**
