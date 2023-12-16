@@ -43,7 +43,8 @@ Additionally, user-generated horses and random horses can be used to assess more
 
 ---
 ### Objects and Important Functions:
-**Horse object**
+**Horse object:**
+
 Parameters: name, speed_rating=None, cons_rating=None, end_rating=None, real_horse=False
 
 The most important attributes of the horse object are **velocity**, **stdev**, and **fatigue**. These attributes are obtained through respective functions, **get_velocity**, **get_stdev**, and **get_fatigue**, in one of two ways:
@@ -105,12 +106,14 @@ The three attributes that these functions assign are then used in the **move** f
     - Every quarter of the race, each horse's stdev doubles, and fatigue is scaled by 1.1
 ---
 **Track Object:**
+
 Parameters: distance
 
 The track object's important attributes are distance and the two dataframes that are queried from the database and used to get user generated horses' velocity, stdev, and fatigue ratings. The class queries the database to get these attributes upon initialization.
 
 ---
 **Race Object:**
+
 Parameters: horses='random', track='random', num_horses='random', sims=50
 
 The most important attributes of the race object are the horses in the race and the track. Upon initialization, a user-specified number of Monte Carlo simulations are conducted to determine odds for the horses. After initialization, a user can simulate an individual race. The most important functions here are **simulate_race** and **get_race_odds**.
