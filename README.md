@@ -1,7 +1,10 @@
 # Horse Racing Simulator
+https://horseracingsimulator-h92atblbawfekbqdlcutyk.streamlit.app/
+
 **To Run the Website:** 
 - Download Run folder and pipfiles 
 - Install packages from pipfile
+- Change to Run directory
 - Enter "streamlit run run.py" into command line
 - If the database needs to be rebuilt:
     - Enter Python and import HorseDB
