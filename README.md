@@ -88,12 +88,12 @@ All three of these functions use the horse's past race data. Preferably, only ra
 
 The three attributes that these functions assign are then used in the **move** function.
 
-    - **move**
-        - Simulates one second of a race
-        - Moves the horse a certain distance depending on velocity, stdev, and endurance
-        - The distance is randomly sampled from a normal distribution of mu=velocity, sigma=stdev
-        - For the last 400 meters of the race, velocity subtracted by endurance
-        - Every quarter of the race, each horse's stdev doubles, and fatigue is scaled by 1.1
+- **move**
+    - Simulates one second of a race
+    - Moves the horse a certain distance depending on velocity, stdev, and endurance
+    - The distance is randomly sampled from a normal distribution of mu=velocity, sigma=stdev
+    - For the last 400 meters of the race, velocity subtracted by endurance
+    - Every quarter of the race, each horse's stdev doubles, and fatigue is scaled by 1.1
 
 **Track Object:**
 Parameters: distance
