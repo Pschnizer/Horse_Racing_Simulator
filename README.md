@@ -7,7 +7,7 @@
     - Enter Python and import HorseDB
     - Create an instance "D"
     - Run D.rebuild_db()
-    
+---
 ### Create Virtual Horses, Get Odds, and Simulate Races!
 
 **There are three types of races:**
@@ -28,12 +28,13 @@ Enter a name and 1-8 ratings for speed, consistency, and endurance. Odds will be
 **Random Horses:**
 Random horses will be generated with the same rating scale as the user-generated horses. Performance will be decided by the random 1-8 ratings.
 
+---
 ### Purpose:
 The main goal of this horse racing simulator is to strategically make bets on real horse races. By using the simulator on real horses, the user can get a fresh set of odds based on the horses' real data. This fresh set of odds can then be compared with the actual race odds, and strategic decisions can be made. For example, if the simulator gives a particular horse 2-1 odds, but the horse's odds in the real race are 20-1, betting on that horse may be a high value pick. 
 
 Additionally, user-generated horses and random horses can be used to assess more general betting strategies. An example of this would be to run a series of simulations and see how often the 4th favorite horse (according to the odds) shows, places, and wins. Based on the results, you can decide when it is a good decision to bet on the 4th horse, what type of bet to make, and what odds are most valuable.
 
-
+---
 ### Objects and Important Functions:
 **Horse object**
 Parameters: name, speed_rating=None, cons_rating=None, end_rating=None, real_horse=False
@@ -61,6 +62,7 @@ All three of these functions use the horse's past race data. Preferably, only ra
         - Compare the average velocity of the shortest distance and longest difference
         - The fatigue rating is how much slower the horse's velocity gets per additional 100m of distance
             - Can be negative or positive
+---
 - **User-generated or Random Horses:**
 
     - **get_velocity**
@@ -94,12 +96,13 @@ The three attributes that these functions assign are then used in the **move** f
     - The distance is randomly sampled from a normal distribution of mu=velocity, sigma=stdev
     - For the last 400 meters of the race, velocity subtracted by endurance
     - Every quarter of the race, each horse's stdev doubles, and fatigue is scaled by 1.1
-
+---
 **Track Object:**
 Parameters: distance
 
 The track object's important attributes are distance and the two dataframes that are queried from the database and used to get user generated horses' velocity, stdev, and fatigue ratings. The class queries the database to get these attributes upon initialization.
 
+---
 **Race Object:**
 Parameters: horses='random', track='random', num_horses='random', sims=50
 
@@ -119,7 +122,7 @@ The most important attributes of the race object are the horses in the race and 
     - Convert the expected probability into a clean odds ratio
     - Through rounding, 'juice'/tax that oddsmakers charge is simulated
 
-
+---
 ### Possible Future Steps:
 
 1) Add more error handling
