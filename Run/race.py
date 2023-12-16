@@ -7,6 +7,8 @@ from pprint import pprint
 import requests
 from bs4 import BeautifulSoup
 from HorseDB import HorseDB
+import os
+
 
 URL =  'https://www.horseracingnation.com/horse/'
 
@@ -214,7 +216,8 @@ class Race:
             self.num_horses = np.random.randint(4, 21) # Min of 4 horses, max of 20
         horses = []
         # Get random names from list of Kentucky Derby Winners
-        with open('horse_names.txt', 'r') as h:
+        names_file = os.path.join(os.path.dirname(__file__), 'horse_names.txt')
+        with open(names_file, 'r') as h:
             names = h.readlines()
         num_names = len(names)
         used_names = []
