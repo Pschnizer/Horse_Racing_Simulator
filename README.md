@@ -2,7 +2,7 @@
 
 **To Run the Website:** 
 
-https://horseracingsimulator-h92atblbawfekbqdlcutyk.streamlit.app/
+- https://horseracingsimulator-h92atblbawfekbqdlcutyk.streamlit.app/
 
 OR
 
