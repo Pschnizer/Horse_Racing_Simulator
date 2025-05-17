@@ -51,7 +51,7 @@ class Horse():
         data = {'distance':[], 'finish_time':[]}    
         doc = self.__get_horse_page()
         # Extract the location of the horse's time and distance data for all races
-        for row in doc.find('tbody').find_all('tr'):
+        for row in doc.find_all('tbody')[1].find_all('tr'):
             dist = row.find_all('td')[3].text
             time = row.find_all('td')[9].text
             data['distance'].append(utils.convert_to_meters(dist))
